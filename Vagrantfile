@@ -11,6 +11,6 @@ config.vm.box_download_insecure=true
 config.vm.network "forwarded_port", guest: 80, host: 80
 
 config.vm.network "public_network"
-
+config.vm.provision "shell" , path:"install.sh"
   
 end
